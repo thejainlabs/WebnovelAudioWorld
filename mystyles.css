@@ -1,0 +1,159 @@
+
+  .dropdown-menu {
+    min-width: 400px;
+  }
+
+  .dropdown-menu li {
+    padding-bottom: .4rem;
+  }
+  .nav-item .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+
+
+/*-----------------------------------*/
+
+.accordion-button::after {
+    filter: invert(1);
+}
+
+#pageHeading {
+    font-size: 2rem; /* Default size for mobile */
+}
+
+@media (min-width: 768px) {
+    #pageHeading {
+      font-size: 3rem; /* Size for tablets and above */
+    }
+}
+
+@media (min-width: 992px) {
+    #pageHeading {
+      font-size: 4rem; /* Size for desktop and above */
+    }
+}
+
+.novel-links {
+  max-height: 70vh; /* Set the max height to a reasonable amount (e.g., 50% of the viewport height) */
+  overflow-y: auto; /* Allows scrolling if the content exceeds the max height */
+  padding-right: 15px; /* Optional: Adds padding for better UX */
+}
+
+/* Style the scrollbar */
+.novel-links::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.novel-links::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Rounded edges for the thumb */
+}
+
+.novel-links::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Thumb color on hover */
+}
+
+/* Optional: Adjust the max-height on smaller screens if needed */
+@media (max-width: 991px) {
+  .novel-links {
+    max-height: 80vh; /* Reduce the max height on smaller screens */
+  }
+}
+
+
+/*novel styles*/
+.novel-list {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px; /* Adjust spacing between items */
+}
+
+.novel-item {
+  padding: 0 15px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .novel-item {
+    width: 50%; /* 50% width on desktop */
+  }
+}
+
+.novel-card {
+  background-color: #343a40; /* Dark background */
+  border: 1px solid #454d55; /* Dark border */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.novel-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.novel-title {
+  color: #f8f9fa; /* Light text color */
+  margin: 0;
+}
+
+/**/
+/* Custom styles for the navbar */
+    .navbar-brand img {
+      max-height: 50px; /* Adjust according to your design */
+    }
+    .navbar-toggler {
+      border: none; /* Removes default border */
+    }
+
+
+/*   audio player */
+/* General button styles */
+.audio-player button {
+    background-color: #333333; /* Darker gray for buttons */
+    border: none;
+    border-radius: 50%;
+    padding: 12px;
+    color: #ffffff; /* Ensures text is white */
+    font-size: 24px; /* Increased font size for icons */
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px; /* Spacing between buttons */
+}
+
+/* Icon color in buttons */
+.audio-player button i {
+    color: lightgoldenrodyellow; /* Ensures icons are white */
+}
+.audio-player button i:hover {
+  color: darkgoldenrod;
+}
+
+/* Hover effect for buttons */
+.audio-player button:hover {
+    background-color: black; /* Slightly lighter gray for hover effect */
+}
+
+.controls .btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Layout adjustments */
+.controls .d-flex {
+    margin-bottom: 10px;
+}
+
+
